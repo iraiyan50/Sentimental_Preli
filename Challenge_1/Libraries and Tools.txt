@@ -1,0 +1,19 @@
+Libraries and Tools
+Datasets (datasets):
+
+Used for loading and preprocessing datasets.
+The specific dataset being used is "SKNahin/bengali-transliteration-data", indicating a Bengali transliteration/translation task.
+Transformers (transformers):
+
+A library by Hugging Face for natural language processing.
+Tools used:
+AutoModelForSeq2SeqLM: Loads a pre-trained sequence-to-sequence model.
+AutoTokenizer: Handles tokenization, preparing text for model input.
+The notebook uses the mT5-small model, a multilingual transformer model from Google, fine-tuned for translation tasks.
+Torch (torch):
+
+A machine learning framework commonly used for deep learning.
+Likely used for model training and evaluation.
+Python Utilities:
+
+Preprocessing functions and data manipulations, such as splitting the dataset into training and validation sets.
