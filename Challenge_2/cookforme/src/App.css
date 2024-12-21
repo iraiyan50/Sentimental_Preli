@@ -1,0 +1,131 @@
+/* App Container */
+.App {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f3f4f6; /* Neutral background */
+  font-family: 'Inter', sans-serif;
+  color: #333;
+}
+
+/* Header (Optional for Branding) */
+.AppHeader {
+  height: 60px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-bottom: 1px solid #eaeaea;
+}
+
+/* Main Chat Container */
+.MainContainer {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+/* Chat Container */
+.ChatContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  background-color: #ffffff;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* Message List (Scrollable Area) */
+.MessageList {
+  flex: 1;
+  padding: 1rem;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #ddd transparent;
+}
+
+.MessageList::-webkit-scrollbar {
+  width: 8px;
+}
+
+.MessageList::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
+}
+
+/* Message Styling */
+.MessageList .cs-message__content {
+  max-width: 75%;
+  padding: 12px 16px;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  line-height: 1.5;
+  word-wrap: break-word;
+  border-radius: 16px;
+}
+
+/* Outgoing Messages */
+.MessageList .cs-message--outgoing .cs-message__content {
+  background-color: #0078d7;
+  color: #ffffff;
+  align-self: flex-end;
+  border-radius: 16px 16px 0 16px;
+}
+
+/* Incoming Messages */
+.MessageList .cs-message--incoming .cs-message__content {
+  background-color: #f3f4f6;
+  color: #333;
+  align-self: flex-start;
+  border-radius: 16px 16px 16px 0;
+}
+
+/* Typing Indicator */
+.TypingIndicator {
+  font-size: 0.9rem;
+  color: #888;
+  margin-top: 8px;
+  text-align: center;
+}
+
+/* Input Container */
+.MessageInput {
+  border-top: 1px solid #eaeaea;
+  padding: 1rem;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.MessageInput textarea {
+  flex: 1;
+  resize: none;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 8px;
+  font-size: 1rem;
+}
+
+.MessageInput button {
+  background-color: #0078d7;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.MessageInput button:hover {
+  background-color: #005bb5;
+}
