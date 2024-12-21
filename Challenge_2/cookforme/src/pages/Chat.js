@@ -19,7 +19,7 @@ const systemMessage = {
 function Chat() {
   const [messages, setMessages] = useState([
     {
-      message: "Hello, I'm Grok! Ask me anything, and I will help you find recipes from the items you have!",
+      message: " Ask me anything, and I will help you find recipes from the items you have!",
       sentTime: "just now",
       sender: "Grok"
     }
